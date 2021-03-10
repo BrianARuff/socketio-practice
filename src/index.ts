@@ -13,6 +13,6 @@ socketIO.on('connection', (socket) => {
 });
 
 
-http.listen(process.env.PORT, () => {
+http.listen(process.env.PORT || 3000, () => {
   console.log('listening on *:' + process.env.PORT);
 });
